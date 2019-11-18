@@ -7,3 +7,15 @@ before_install:
 
 script:
   - docker run -e CI=true uday1005/dkr-react-aws-frontend npm run test
+deploy:
+  edge: true
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "dkr-react-aws-frontend"
+  env: "DkrReactAwsFrontend-env"
+  bucket_name: "elasticbeanstalk-us-east-2-785136939258"
+  bucket_path: "dkr-react-aws-frontend"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY

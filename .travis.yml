@@ -12,7 +12,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "dkr-react-aws-frontend"
-  env: "DkrReactAwsFrontend-env"
+  env: "DkrReactAwsFrontend-envy"
   bucket_name: "elasticbeanstalk-us-east-2-785136939258"
   bucket_path: "dkr-react-aws-frontend"
   on:

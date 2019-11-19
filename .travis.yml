@@ -11,10 +11,10 @@ deploy:
   edge: true
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: "dkr-react-aws-frontend"
-  env: "DkrReactAwsFrontend-envy"
+  app: "dkr-react-aws-test"
+  env: "DkrReactAwsTest-env"
   bucket_name: "elasticbeanstalk-us-east-2-785136939258"
-  bucket_path: "dkr-react-aws-frontend"
+  bucket_path: "dkr-react-aws-test"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
